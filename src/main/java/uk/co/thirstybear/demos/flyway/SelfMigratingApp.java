@@ -22,7 +22,6 @@ public class SelfMigratingApp {
     private static DataSource buildDataSource() {
         final MysqlDataSource dataSource = new MysqlDataSource();
         dataSource.setURL("jdbc:mysql://localhost:3306");
-        dataSource.setDatabaseName("testSchema");
         dataSource.setUser("root");
         dataSource.setPassword("password");
         return dataSource;
